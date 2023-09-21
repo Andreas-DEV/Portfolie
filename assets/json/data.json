@@ -1,0 +1,50 @@
+{
+    "content": {
+        "mig": {
+            "1": "Hi, my name is",
+            "2": "Andreas Christensen",
+            "3": "I build fun things for the web.",
+            "4": "I'm a frontend developer student from Aarhus, Denmark. I enjoy working on every aspect of web development, from the user interface to the server logic."
+        },
+        "menuitems": [
+            {
+                "name": "Github",
+                "src": "https://github.com/Andreas-DEV"
+            },
+            {
+                "name": "Facebook",
+                "src": "https://facebook.com/sit.dig.paa.den"
+            },
+            {
+                "name": "Twitter",
+                "src": "https://twitter.com/_sn0wCSGO"
+            }
+        ],
+        "media": {
+            "logo": "./assets/media/logo.png",
+            "bootstrap": "./assets/media/bootstrap-icon.png",
+            "csharp": "./assets/media/csharp-icon.png",
+            "dotnet": "./assets/media/dotnet-icon.png",
+            "html": "./assets/media/html-icon.png",
+            "java": "./assets/media/java-icon.png",
+            "javascript": "./assets/media/javascript-icon.png",
+            "nodejs": "./assets/media/nodejs-icon.png",
+            "python": "./assets/media/python-icon.png",
+            "scss": "./assets/media/scss-icon.png",
+            "typescript": "./assets/media/typescript-icon.png",
+            "resume": "./assets/media/resume-icon.png",
+            "waving": "./assets/media/waving.gif"
+        },
+        "some": [
+            {
+                "src": "./assets/media/github-icon.png"
+            },
+            {
+                "src": "./assets/media/facebook-icon.png"
+            },
+            {
+                "src": "./assets/media/twitter-icon.png"
+            }
+        ]
+    }
+}
