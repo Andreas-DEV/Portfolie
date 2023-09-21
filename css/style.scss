@@ -50,6 +50,7 @@ body {
     cursor: pointer;
   }
 
+
   #navbarMenuItemImg {
     width: 30px;
     object-fit: cover;
@@ -67,10 +68,10 @@ body {
   position: absolute;
   top: 40%;
   margin-left: 2rem;
-  
+
   #containerH1 {
     font-size: 4.2rem;
-  
+
   }
   
   #containerH2 {
@@ -128,6 +129,7 @@ body {
 
   #containerGif {
     width: 75px;
+    filter:opacity(.99);
   }
 }
 

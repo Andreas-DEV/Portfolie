@@ -5,7 +5,7 @@ export default class Frontpage {
   constructor() {
 
 
-
+    /* INITIIALIZE FAVICON */
     new this.favicon;
 
     /* NAVBAR */
@@ -17,7 +17,7 @@ export default class Frontpage {
 
   } // END constructor
 
-  favicon(){
+  favicon() {
     var link = document.querySelector("link[rel~='icon']");
     if (!link) {
       link = document.createElement('link');
@@ -28,14 +28,16 @@ export default class Frontpage {
   }
 
   aboutme() {
+
+    /* ABOUT ME CONTAINER */
     const containerAboutMe = document.createElement('div')
     containerAboutMe.id = "containerAboutMe"
     document.body.appendChild(containerAboutMe)
 
+    /* <p> & <img> */
     const containerP1AndImg = document.createElement('div')
     containerP1AndImg.id = "containerP1AndImg"
     containerAboutMe.appendChild(containerP1AndImg)
-
 
     const containerGif = document.createElement('img')
     containerGif.id = "containerGif"
@@ -46,7 +48,9 @@ export default class Frontpage {
     containerP1.id = "containerP1"
     containerP1.textContent = data.content.mig[1]
     containerP1AndImg.appendChild(containerP1)
+    /* P AND IMG END */
 
+    /* ABOUT ME TEXT */
     const containerH1 = document.createElement('h1')
     containerH1.id = "containerH1"
     containerH1.textContent = data.content.mig[2]
@@ -61,6 +65,7 @@ export default class Frontpage {
     containerP2.id = "containerP2"
     containerP2.textContent = data.content.mig[4]
     containerAboutMe.appendChild(containerP2)
+    /* ABOUT ME TEXT END */
 
     const containerButton = document.createElement('div')
 
@@ -96,26 +101,27 @@ export default class Frontpage {
     const navbarMenu = document.createElement('ul')
     navbarMenu.id = "navbarMenu"
     navbarContainer.appendChild(navbarMenu)
-    // MENU Children
 
+    // MENU Children
     data.content.menuitems.forEach((el, index) => {
 
-      /* 1st */
+      /* List container */
       const navbarMenuLi = document.createElement('li')
       navbarMenuLi.id = "navbarMenuLi"
       navbarMenu.appendChild(navbarMenuLi)
 
-      /* 2nd */
+      /* Img container */
       const navbarMenuItemImg = document.createElement('img')
       navbarMenuItemImg.id = "navbarMenuItemImg"
       navbarMenuLi.appendChild(navbarMenuItemImg)
       navbarMenuItemImg.src = data.content.some[index].src
 
 
-      /* 3rd */
+      /* Links */
       const navbarMenuItem = document.createElement('a')
       navbarMenuItem.id = "navbarMenuItem"
       navbarMenuItem.href = el.src
+      navbarMenuItem.target = "_blank"
       navbarMenuItem.textContent = el.name
       navbarMenuLi.appendChild(navbarMenuItem)
 
