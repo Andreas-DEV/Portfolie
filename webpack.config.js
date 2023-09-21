@@ -16,7 +16,7 @@ const path = require('path');
 
    plugins: [
      new HtmlWebpackPlugin({
-      title: 'Andreas Grønbech Christensen',
+      title: 'GC Portfolio',
     }),
 
 

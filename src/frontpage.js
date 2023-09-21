@@ -4,6 +4,10 @@ export default class Frontpage {
 
   constructor() {
 
+
+
+    new this.favicon;
+
     /* NAVBAR */
     new this.navbar;
 
@@ -12,6 +16,16 @@ export default class Frontpage {
 
 
   } // END constructor
+
+  favicon(){
+    var link = document.querySelector("link[rel~='icon']");
+    if (!link) {
+      link = document.createElement('link');
+      link.rel = 'icon';
+      document.head.appendChild(link);
+    }
+    link.href = './assets/media/logo.png';
+  }
 
   aboutme() {
     const containerAboutMe = document.createElement('div')
@@ -22,7 +36,7 @@ export default class Frontpage {
     containerP1AndImg.id = "containerP1AndImg"
     containerAboutMe.appendChild(containerP1AndImg)
 
-    
+
     const containerGif = document.createElement('img')
     containerGif.id = "containerGif"
     containerGif.src = data.content.media.waving
@@ -57,7 +71,7 @@ export default class Frontpage {
     containerButtonImg.id = "containerButtonImg"
 
     containerButtonImg.src = data.content.media.resume
-    
+
     containerButton.id = "containerButton"
     containerButtonText.textContent = "Resume"
     containerAboutMe.appendChild(containerButton)
@@ -65,7 +79,7 @@ export default class Frontpage {
     containerButton.appendChild(containerButtonText)
   }
 
-  navbar(){
+  navbar() {
 
     /* CONTAINER */
     const navbarContainer = document.createElement('nav')
@@ -84,7 +98,7 @@ export default class Frontpage {
     navbarContainer.appendChild(navbarMenu)
     // MENU Children
 
-    data.content.menuitems.forEach((el, index)=> {
+    data.content.menuitems.forEach((el, index) => {
 
       /* 1st */
       const navbarMenuLi = document.createElement('li')
@@ -96,16 +110,16 @@ export default class Frontpage {
       navbarMenuItemImg.id = "navbarMenuItemImg"
       navbarMenuLi.appendChild(navbarMenuItemImg)
       navbarMenuItemImg.src = data.content.some[index].src
-      
-      
+
+
       /* 3rd */
       const navbarMenuItem = document.createElement('a')
       navbarMenuItem.id = "navbarMenuItem"
       navbarMenuItem.href = el.src
       navbarMenuItem.textContent = el.name
       navbarMenuLi.appendChild(navbarMenuItem)
-      
-      
+
+
 
     })
 
