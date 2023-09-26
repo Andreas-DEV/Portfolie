@@ -20,7 +20,7 @@
     "html-webpack-plugin": "^5.5.0",
     "pixi-spine": "^4.0.4",
     "pixi.js": "^7.2.4",
-    "sass": "^1.49.4",
+    "sass": "^1.68.0",
     "sass-loader": "^12.4.0",
     "set-random-interval": "^1.1.0",
     "style-loader": "^3.3.1",

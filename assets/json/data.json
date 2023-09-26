@@ -6,6 +6,10 @@
             "3": "I build fun things for the web.",
             "4": "I'm a frontend developer student from Aarhus, Denmark. I enjoy working on every aspect of web development, from the user interface to the server logic."
         },
+        "about": {
+            "1": "I am a passionate Front-end Developer residing in Aarhus, Denmark. At the age of 22. I have dedicated myself to the exciting world of web development and have embarked on a journey of constant learning and growth.",
+            "2": "From a young age, I was fascinated by technology and its ability to shape the world around us. The curiousity led me to expore programming and web development, where I quickly discovered my knack for creacting dynamic and user-friendly applications"
+        },
         "menuitems": [
             {
                 "name": "Github",
@@ -21,20 +25,53 @@
             }
         ],
         "media": {
+            "mig": "./assets/media/brugerfoto.png",
             "logo": "./assets/media/logo.png",
-            "bootstrap": "./assets/media/bootstrap-icon.png",
-            "csharp": "./assets/media/csharp-icon.png",
-            "dotnet": "./assets/media/dotnet-icon.png",
-            "html": "./assets/media/html-icon.png",
-            "java": "./assets/media/java-icon.png",
-            "javascript": "./assets/media/javascript-icon.png",
-            "nodejs": "./assets/media/nodejs-icon.png",
-            "python": "./assets/media/python-icon.png",
-            "scss": "./assets/media/scss-icon.png",
-            "typescript": "./assets/media/typescript-icon.png",
             "resume": "./assets/media/resume-icon.png",
             "waving": "./assets/media/waving.gif"
         },
+        "lang": [
+            {
+                "src": "./assets/media/bootstrap-icon.png",
+                "domain": "https://getbootstrap.com/"
+            },
+            {
+                "src": "./assets/media/csharp-icon.png",
+                "domain": "https://learn.microsoft.com/en-us/dotnet/csharp/"
+            },
+            {
+                "src": "./assets/media/dotnet-icon.png",
+                "domain": "https://dotnet.microsoft.com/en-us/"
+            },
+            {
+                "src": "./assets/media/html-icon.png",
+                "domain": "https://www.w3schools.com/html/"
+            },
+            {
+                "src": "./assets/media/java-icon.png",
+                "domain": "https://dev.java/"
+            },
+            {
+                "src": "./assets/media/javascript-icon.png",
+                "domain": "https://www.javascript.com/"
+            },
+            {
+                "src": "./assets/media/nodejs-icon.png",
+                "domain": "https://nodejs.org/en"
+            },
+            {
+                "src": "./assets/media/python-icon.png",
+                "domain": "https://www.python.org/"
+            },
+            {
+                "src": "./assets/media/scss-icon.png",
+                "domain": "https://sass-lang.com/"
+            },
+            {
+                "src": "./assets/media/typescript-icon.png",
+                "domain": "https://www.typescriptlang.org/"
+            }
+        ],
         "some": [
             {
                 "src": "./assets/media/github-icon.png"
