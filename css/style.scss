@@ -177,9 +177,22 @@
    }
 
    #cardBack {
-     background: url('https://s.cdpn.io/33073/lorempixe1l.jpg');
+     background-color: #515666;
      border-radius: 50%;
      filter: drop-shadow(1px 1px 10px black);
+
+     #cardBackContent {
+      position: relative;
+      top: 28%;
+      left: 0;
+      padding-block: .5rem;
+      text-align: center;
+
+      font-family: var(--primary-font);
+      font-size: 1.3rem;
+      color: #f2f4f5;
+
+     }
    }
 
  }

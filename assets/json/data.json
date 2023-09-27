@@ -82,6 +82,24 @@
             {
                 "src": "./assets/media/twitter-icon.png"
             }
+        ],
+
+        "facts": [
+            {
+                "fact": "I have 2 dogs"
+            },
+            {
+                "fact": "I collect perfumes"
+            },
+            {
+                "fact": "I was born in December"
+            },
+            {
+                "fact": "I've programmed for quite some time"
+            },
+            {
+                "fact": "I'm good at Counter Strike: Global Offensive"
+            }
         ]
     }
 }

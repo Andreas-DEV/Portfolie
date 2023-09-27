@@ -7,4 +7,6 @@ import "../css/style.scss";
 
   new Frontpage;
 
+  
+
 })();
