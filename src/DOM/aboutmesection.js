@@ -9,10 +9,21 @@ export default class AboutMeSection {
         AboutMeContainer.id = "AboutMeContainer"
         document.body.appendChild(AboutMeContainer)
 
+        /* PARAGRAPHTITLE CONTAINER */
+        const paragraphTitleContainer = document.createElement('div')
+        paragraphTitleContainer.id = "paragraphTitleContainer"
+        AboutMeContainer.appendChild(paragraphTitleContainer)
+
+        const paragraphTitle = document.createElement('h2')
+        paragraphTitle.id = "paragraphTitle"
+        paragraphTitle.textContent = "About me"
+        paragraphTitleContainer.appendChild(paragraphTitle)
+
         /* <p> + Container */
         const paragraphContainer = document.createElement('div')
         paragraphContainer.id = "paragrahContainer"
         AboutMeContainer.appendChild(paragraphContainer)
+
 
 
         for (let i = 0; i < 3; i++) {

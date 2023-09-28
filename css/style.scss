@@ -73,7 +73,6 @@
    margin-block: 15rem 26rem;
 
 
-
    #containerH1 {
      font-size: 4.2rem;
 
@@ -92,6 +91,8 @@
      padding-top: 3.5rem;
      filter: drop-shadow(0px 0px 1px #80afee);
    }
+
+
 
    #containerP2 {
      width: 57ch;
@@ -146,6 +147,41 @@
    align-items: center; */
    gap: 2rem;
    margin-block: 2rem;
+
+
+   #paragraphTitleContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    
+
+    #paragraphTitle {
+      font-family: var(--primary-font);
+      font-size: 3rem;
+
+
+
+    }
+    #paragraphTitle::before {
+      content: "<h2> ";
+      color: #0093D6;
+
+      font-size: 1rem;
+      font-family: var(--secondary-font);
+    }
+    
+    #paragraphTitle::after {
+      content: " </h2>";
+      color: #0093D6;
+
+      font-size: 1rem;
+      font-family: var(--secondary-font);
+    }
+
+
+
+   }
+   
 
    img {
      border-radius: 50%;
@@ -222,4 +258,29 @@
    #langContainerImg:hover {
      filter: drop-shadow(1px 1px 4px black);
    }
+ }
+
+ /* RESPONSIVE */
+
+ @media(max-width: 1100px) {
+  body {
+    overflow-x: hidden;
+
+    width: 750px;
+    margin: 0 auto;
+  }
+  #paragraph {
+    font-size: 90% !important;
+  }
+
+  #cardFront {
+    position: relative;
+    
+    #aboutMePicture {
+      margin-top: 5rem;
+      width: 200px;
+      height: 200px;
+      margin-left: 20rem;
+    }
+  }
  }
